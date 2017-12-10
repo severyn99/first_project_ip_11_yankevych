@@ -1,11 +1,10 @@
-	#include<iostream>
-	#include<math.h>
-	#define n 5
-	
+#include<iostream>
+#include<math.h>
+#define n 5	
 
-	using namespace std;
+using namespace std;
 	
-		class Matrix
+class Matrix
 	{
 	private:
 		int a[n][n];
@@ -18,7 +17,7 @@
 		void raw_max_and_summation();
 	};
 	
-		void Matrix::matrix_input()  //ввід матриці
+void Matrix::matrix_input()  //ввід матриці
 	{
 		for (i = 0; i < n; i++) {
 			for (j = 0; j < n; j++) {
@@ -29,7 +28,7 @@
 		}
 	}
 	
-		void Matrix::matrix_output() //вивід матриці
+void Matrix::matrix_output() //вивід матриці
 	{
 		for (i = 0; i < n; i++) {
 			for (j = 0; j < n; j++) {
@@ -39,7 +38,7 @@
 		}
 	}
 	
-	void Matrix::matrix_sorting() //сортування обміном
+void Matrix::matrix_sorting() //сортування обміном
 {
   for(j = 0; j < n; j++) {
    for(k = n-1; k >=0 ; k--) {
@@ -55,7 +54,7 @@
   }
  }
 	
-	 void Matrix::raw_max_and_summation() //найбільший елемент рядку і їх сума
+void Matrix::raw_max_and_summation() //найбільший елемент рядку і їх сума
 	 {
 	 cout << endl;
 	 sum = 0;
@@ -86,5 +85,5 @@
 		A.raw_max_and_summation();
 		cout << endl;
 	}
-	_getch()
+ _getch();
 	
